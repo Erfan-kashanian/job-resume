@@ -1,0 +1,306 @@
+.img1{
+width: 100%;
+height: 70%;
+}
+.img{
+  text-align: right;
+}
+.modalBack{
+  background-color: rgba(10, 10, 10, 0.925);
+  position: fixed;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+.modalFront{
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  z-index: 600 !important;
+  top: 30%;
+  border: 1px rgb(39, 137, 230) solid;
+  border-radius: 10px;
+  width: 70%;
+  left: 15%;
+  padding: 1rem;
+}
+.modalFront button{
+  padding: 0.5rem;
+  background-color: blue !important;
+  color: aliceblue !important;
+  font-size: large;
+  border-radius: 10px;
+}
+.modalFront h3{
+  color: rgba(70, 170, 236, 0.932);
+  text-shadow: 5px  5px 5px rgb(2, 2, 82);
+}
+.modalFront button:hover{
+  transform: scale(1.1);
+}
+.hero{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  direction: rtl;
+  width: 95%;
+  height: 85vh;
+  background: linear-gradient(45deg , blue,#3a3ace,rgb(74, 120, 173),#ff006a,#e965c8);
+  border: 2px solid blue;
+  border-radius: 10px 80px 10px 10px ;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.hero img{
+  margin-top: 2rem;
+  width: 70%;
+  height: 75%;
+  border-radius: 10px 70px 10px 70px ;
+  box-shadow: 0 8px 8px 8px rgb(11, 2, 90);
+}
+.hero p{
+  color: aliceblue;
+  text-align: center;
+  width: 75%;
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+}
+.body{
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  margin-top: 1rem;
+}
+.body aside ul li a{
+  text-decoration: none;
+  text-align: center;
+  color: #040488;
+  line-height: 2;
+}
+.body aside ul li::marker{
+  content: none;
+}
+.body aside ul li:hover{
+  border-left: solid blue 1px;
+  transform: scale(1.1);
+  border-right: solid blue 1px;
+    transition: 0.1s;
+
+}
+aside{
+  border: solid 2px blue;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  height: 80vh;
+}
+aside ul{
+  top: 50%;
+  left: 0;
+  text-align: center;
+  margin-right:2rem ;
+  }
+.content{
+  direction: rtl;
+  line-height: 2;
+}
+.dropDown {
+  display: flex;
+  flex-direction: row;
+  transform: scale(1,1);
+  transition: 0.5s;
+}
+.dropUp{
+  display: flex;
+  flex-direction: row;
+  transform: scale(1,0);
+  transition: 0.5s;
+}
+
+.body .content .dropDown  li{
+  border: 1px solid blue;
+  width: 5rem ;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px blue;
+  color: rgb(7, 7, 90);
+}
+.body .content .dropUp  li{
+  border: 1px solid blue;
+  width: 5rem ;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px blue;
+  color: rgb(7, 7, 90);
+}
+.body .content .dropDown  li::marker{
+  content: none;
+}
+.body .content .dropUp  li::marker{
+  content: none;
+}
+.skillButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.skillButton button{
+  padding: 0.8rem;
+  background-color: #3a3ace !important;
+  font-size: larger;
+  color: aliceblue !important;
+  border: 1px solid aliceblue;
+  transition: 0.1s;
+  border-radius: 10px;
+}
+.skillButton button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.skillButton button:active{
+  transform: scale(0.8);
+  color: #040488;
+  background-color: #dfdfe6;
+}
+ .example{
+  position: relative;
+  z-index: 0 !important;
+}
+#topLink svg{
+  background-color: #3a3ace;
+  color: #dfdfe6;
+}
+.body .content #topLink{
+  right: 60vw;
+  bottom: 4%;
+  position: relative;
+}
+@media(min-width:500px) and (max-width:1000px){
+    .hero p{
+  font-size: 15px;
+  position: relative;
+  top: 10%;
+}
+.hero img{
+  width: 30vw;
+  height: 45vh;
+  position: relative;
+  left: 10%;
+  top: 17%;
+}
+.body .content{
+  font-size: 15px;
+}
+.body .img .img1{
+  width: 30vw;
+  height: 55vh;
+  position: relative;
+  top: 10%;
+}
+.body aside ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body aside ul li{
+  font-size: 10px;
+  padding: 1rem;
+}
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1,1);
+  transition: 0.5s;
+}
+.dropUp{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1,0);
+  transition: 0.5s;
+}
+.body .content .dropDown  li{
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+.body .content .dropUp  li{
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+.modalFront h3{
+  font-size: 16px;
+}
+.modalFront button{
+  padding: 0.5rem;
+  font-size: small;
+}
+}
+@media(min-width:100px) and (max-width:500px){
+    .body{
+    background-image:url(./img1.jpg);
+    background-color: rgba(0, 0, 0, 0.11);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero p{
+  font-size: 10px;
+}
+.hero img{
+  display: none;
+}
+.body .content{
+  font-size: 10px;
+  font-weight: bolder;
+}
+.body aside{
+  display: none;
+}
+.body .img .img1{
+  display: none;
+}
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1,1);
+  transition: 0.5s;
+}
+.dropUp{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1,0);
+  transition: 0.5s;
+}
+.body .content .dropDown  li{
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+.body .content .dropUp  li{
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+.modalFront h3{
+  font-size: 12px;
+}
+.modalFront button{
+  padding: 0.2rem;
+  font-size: smaller;
+}
+}

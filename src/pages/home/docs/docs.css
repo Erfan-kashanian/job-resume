@@ -1,0 +1,21 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:70vh;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.react-slideshow-container{
+  background-color: rgb(89, 146, 179);
+  border-radius: 40px 40px 40px 40px;
+  border:solid 2px rgb(3, 3, 59) ;
+}

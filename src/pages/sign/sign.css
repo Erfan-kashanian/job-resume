@@ -1,0 +1,10 @@
+.main .describe{
+    direction: rtl !important;
+    text-align: center;
+    margin-top: 1rem;
+}
+@media(max-width:500px){
+    .main .describe{
+        font-size: 15px;
+    }
+}

@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+  background-color: rgba(90, 167, 238, 0.644) !important;
+  display: grid !important;
+  grid-template-columns: auto auto auto !important;
+  height: 4rem;
+}
+.links{
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+.links a{
+  margin-right: 1rem !important;
+  text-decoration: none ;
+  color: rgb(18, 8, 148);
+  padding: 0rem;
+  height: 2rem;
+}
+.links a:hover{
+  transform: scale(1.2);
+  border-bottom: 1px solid #ff0055;
+  transition: 0.1s;
+  color: #ff0055;
+}
+.main .nav .links .active{
+color: #ff0055;
+}
+.nav h2{
+  text-align: end;
+  margin-right: 3rem;
+  color: rgb(18, 8, 148);
+  text-shadow: 5px 5px 5px rgba(10, 10, 48, 0.548);
+}
+.nav h4{
+  color: rgb(9, 9, 112);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(min-width:500px) and (max-width:1000px){
+  .links a{
+    font-size: 13px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nav h2,h4{
+    font-size: 17px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+@media(min-width:100px) and (max-width:500px){
+  
+    .links a{
+    font-size: 10px;
   }
+  .nav h2,h4{
+    font-size: 13px !important;
+  }
+  
 }
