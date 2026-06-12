@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/job-resume/static/css/main.99dc1df2.css",
+    "main.js": "/job-resume/static/js/main.0768060b.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/job-resume/static/js/453.fd2f0c4a.chunk.js",
+    "static/media/img2.jpg": "/job-resume/static/media/img2.fa4c215105d0d92c88da.jpg",
+    "static/media/img22.jpg": "/job-resume/static/media/img22.05b40eed0b37fd864db1.jpg",
+    "static/media/img11.jpg": "/job-resume/static/media/img11.eae18a47296e2e3e3a1e.jpg",
+    "static/media/img33.jpg": "/job-resume/static/media/img33.e2f5a7bc4957e40a79d2.jpg",
+    "static/media/img23.jpg": "/job-resume/static/media/img23.e9d3b66927f902ff6d93.jpg",
+    "static/media/img44.jpg": "/job-resume/static/media/img44.b74e245586e72c7d4fbd.jpg",
+    "static/media/img1.jpg": "/job-resume/static/media/img1.7d6ebf72f3b49202ae52.jpg",
+    "static/media/img21.jpg": "/job-resume/static/media/img21.80698d7d130298e88046.jpg",
+    "static/media/logo.svg": "/job-resume/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/job-resume/index.html",
+    "main.99dc1df2.css.map": "/job-resume/static/css/main.99dc1df2.css.map",
+    "main.0768060b.js.map": "/job-resume/static/js/main.0768060b.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/job-resume/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99dc1df2.css",
+    "static/js/main.0768060b.js"
+  ]
+}
