@@ -206,7 +206,7 @@ footer .icons div{
 }
 .but,.darkBut{
   font-size: 13px;
-  width: 25vw;
+  width: 20vw;
 }
 footer .icons{
   display: grid;
@@ -221,4 +221,5 @@ footer img{
 footer p{
   font-size: smaller;
 }
+
 }
