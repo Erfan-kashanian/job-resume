@@ -1,78 +1,100 @@
+.main{
+  background-color: #a3a9f886;
+}
+.darkMain{
+ background-color: #080808b2;
+}
 .img1{
-width: 100%;
-height: 70%;
+width: 80%;
+height: 50%;
+border-radius: 10px;
+margin-right: 2rem;
+box-shadow: 0px 10px 10px 10px rgba(54, 54, 194, 0.726);
+}
+.darkimg1{
+  width: 80%;
+height: 50%;
+border-radius: 10px;
+margin-right: 2rem;
+box-shadow: 0px 10px 10px 10px rgba(173, 173, 173, 0.644);
 }
 .img{
   text-align: right;
 }
-.modalBack{
-  background-color: rgba(10, 10, 10, 0.925);
-  position: fixed;
-  z-index: 500;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-}
-.modalFront{
-  direction: rtl;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  z-index: 600 !important;
-  top: 30%;
-  border: 1px rgb(39, 137, 230) solid;
-  border-radius: 10px;
-  width: 70%;
-  left: 15%;
-  padding: 1rem;
-}
-.modalFront button{
-  padding: 0.5rem;
-  background-color: blue !important;
-  color: aliceblue !important;
-  font-size: large;
-  border-radius: 10px;
-}
-.modalFront h3{
-  color: rgba(70, 170, 236, 0.932);
-  text-shadow: 5px  5px 5px rgb(2, 2, 82);
-}
-.modalFront button:hover{
-  transform: scale(1.1);
-}
+
 .hero{
-  margin-top: 1rem;
-  margin-left: 2rem;
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+  width: 95vw;
+  height: 87vh;
   direction: rtl;
-  width: 95%;
-  height: 85vh;
   background: linear-gradient(45deg , blue,#3a3ace,rgb(74, 120, 173),#ff006a,#e965c8);
   border: 2px solid blue;
-  border-radius: 10px 80px 10px 10px ;
+  border-radius: 80px 80px 80px 80px ;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+.darkhero{
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+  width: 95vw;
+  height: 87vh;
+  direction: rtl;
+  background: linear-gradient(45deg , rgba(61, 61, 61, 0.993),#4c4c4db9,rgb(114, 115, 116),#aaa9a9,#dad7d78e);
+  border: 2px solid rgb(149, 149, 151);
+  border-radius: 80px 80px 80px 80px ;
   display: grid;
   grid-template-columns: auto auto;
 }
-.hero img{
-  margin-top: 2rem;
-  width: 70%;
-  height: 75%;
+.hero .image img{
+  position: relative;
+  right: 20%;
+  top: 20%;
+  width: 40%;
+  height: 50%;
   border-radius: 10px 70px 10px 70px ;
   box-shadow: 0 8px 8px 8px rgb(11, 2, 90);
 }
-.hero p{
-  color: aliceblue;
+.darkhero .image img{
+  position: relative;
+  right: 20%;
+  top: 20%;
+  width: 40%;
+  height: 50%;
+  border-radius: 10px 70px 10px 70px ;
+  box-shadow: 0 8px 8px 8px rgb(164, 163, 177);
+}
+.hero .text{
+  position: relative;
+  right: 15%;
+  top: 20%;
+}
+.hero .text p{
   text-align: center;
-  width: 75%;
-  font-size: 20px;
-  margin-top: 3rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  line-height: 1.8;
+  font-size: larger;
+  color: rgb(6, 16, 82);
+  text-shadow: 4px 4px 5px rgb(4, 4, 68);
+}
+.darkhero .text{
+  position: relative;
+  right: 15%;
+  top: 20%;
+}
+.darkhero .text p{
+  text-align: center;
+  font-size: larger;
+  color: rgb(23, 23, 24);
+  text-shadow: 4px 4px 5px rgb(80, 80, 82);
 }
 .body{
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  margin-top: 1rem;
+}
+.bodyDark{
   display: grid;
   grid-template-columns: 20% 50% 30%;
   margin-top: 1rem;
@@ -81,20 +103,40 @@ height: 70%;
   text-decoration: none;
   text-align: center;
   color: #040488;
-  line-height: 2;
+  line-height: 5;
+}
+.bodyDark aside ul li a{
+  text-decoration: none;
+  text-align: center;
+  color: #c4c4c9;
+  line-height: 5;
 }
 .body aside ul li::marker{
   content: none;
 }
+.bodyDark aside ul li::marker{
+  content: none;
+}
 .body aside ul li:hover{
-  border-left: solid blue 1px;
+  border-bottom: solid blue 1px;
   transform: scale(1.1);
-  border-right: solid blue 1px;
+  
     transition: 0.1s;
 
 }
-aside{
+.bodyDark aside ul li:hover{
+  border-bottom: solid rgb(232, 232, 235) 1px;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+.aside{
   border: solid 2px blue;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  height: 80vh;
+}
+.darkaside{
+  border: solid 2px rgb(228, 228, 233);
   margin-top: 2rem;
   margin-left: 2rem;
   height: 80vh;
@@ -109,22 +151,47 @@ aside ul{
   direction: rtl;
   line-height: 2;
 }
-.dropDown {
+.darkContent{
+  direction: rtl;
+  line-height: 2;
+}
+.darkContent p{
+  color: #dfdfe6;
+}
+.darkContent h4{
+  color: #dfdfe6;
+}
+.darkContent li{
+  color: #dfdfe6;
+}
+
+.down {
   display: flex;
   flex-direction: row;
   transform: scale(1,1);
   transition: 0.5s;
 }
-.dropUp{
+.darkdropDown {
+  display: flex;
+  flex-direction: row;
+  transform: scale(1,1);
+  transition: 0.5s;
+}
+.up{
   display: flex;
   flex-direction: row;
   transform: scale(1,0);
   transition: 0.5s;
 }
-
-.body .content .dropDown  li{
+.darkdropUp{
+  display: flex;
+  flex-direction: row;
+  transform: scale(1,0);
+  transition: 0.5s;
+}
+.body .content .down  li{
   border: 1px solid blue;
-  width: 5rem ;
+  width: 6rem ;
   padding: 1rem;
   text-align: center;
   border-radius: 0 10px 0 10px;
@@ -132,9 +199,19 @@ aside ul{
   box-shadow: 5px 5px blue;
   color: rgb(7, 7, 90);
 }
-.body .content .dropUp  li{
+.bodyDark .darkContent .darkdropDown  li{
+  border: 1px solid rgb(247, 247, 248);
+  width: 6rem ;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px rgb(117, 117, 121);
+  color: rgb(244, 244, 248);
+}
+.body .content .up  li{
   border: 1px solid blue;
-  width: 5rem ;
+  width: 6rem ;
   padding: 1rem;
   text-align: center;
   border-radius: 0 10px 0 10px;
@@ -142,10 +219,26 @@ aside ul{
   box-shadow: 5px 5px blue;
   color: rgb(7, 7, 90);
 }
-.body .content .dropDown  li::marker{
+.bodyDark .darkContent .darkdropUp  li{
+  border: 1px solid rgb(244, 244, 247);
+  width: 6rem ;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px rgb(105, 105, 110);
+  color: rgb(252, 252, 255);
+}
+.bodyDark .darkContent .darkdropDown  li::marker{
   content: none;
 }
-.body .content .dropUp  li::marker{
+.bodyDark .darkContent .darkdropUp  li::marker{
+  content: none;
+}
+.body .content .up  li::marker{
+  content: none;
+}
+.body .content .down  li::marker{
   content: none;
 }
 .skillButton{
@@ -155,10 +248,26 @@ aside ul{
   justify-content: center;
   margin: 1rem;
 }
+.skillButtonDark{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
 .skillButton button{
-  padding: 0.8rem;
+  padding: 0.5rem;
   background-color: #3a3ace !important;
-  font-size: larger;
+  font-size: medium;
+  color: aliceblue !important;
+  border: 1px solid aliceblue;
+  transition: 0.1s;
+  border-radius: 10px;
+}
+.skillButtonDark button{
+  padding: 0.5rem;
+  background-color: #7e7e819a !important;
+  font-size: medium;
   color: aliceblue !important;
   border: 1px solid aliceblue;
   transition: 0.1s;
@@ -168,8 +277,17 @@ aside ul{
   cursor: pointer;
   transform: scale(1.1);
 }
+.skillButtonDark button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .skillButton button:active{
-  transform: scale(0.8);
+  transform: scale(0.6);
+  color: #040488;
+  background-color: #dfdfe6;
+}
+.skillButtonDark button:active{
+  transform: scale(0.6);
   color: #040488;
   background-color: #dfdfe6;
 }
@@ -177,38 +295,87 @@ aside ul{
   position: relative;
   z-index: 0 !important;
 }
-#topLink svg{
-  background-color: #3a3ace;
+.topLink svg{
+  background-color: #2521f3;
   color: #dfdfe6;
+}
+.darkTopLink svg{
+  background-color: #79797a;
+}
+.bodyDark .darkContent #topLink{
+  right: 60vw;
+  bottom: 4%;
+  position: relative;
+}
+.bodyDark .darkContent h4{
+  margin-top: 1rem;
 }
 .body .content #topLink{
   right: 60vw;
   bottom: 4%;
   position: relative;
 }
-@media(min-width:500px) and (max-width:1000px){
-    .hero p{
-  font-size: 15px;
-  position: relative;
-  top: 10%;
+.body .content h4{
+  margin-top: 3rem;
 }
-.hero img{
-  width: 30vw;
+.bodyDark .darkContent h4{
+  margin-top: 3rem;
+}
+
+@media(min-width:500px) and (max-width:1000px){
+.hero .text{
+  right: -2%;
+}
+.darkhero .text{
+  right: -2%;
+}
+  .hero .text p{
+  font-size: medium;
+}
+  .darkhero .text p{
+  font-size: medium;
+}
+.hero .image img{
+  width: 27vw;
   height: 45vh;
   position: relative;
-  left: 10%;
+  left: 15%;
   top: 17%;
+  right: -5%;
+}
+.darkhero .image img{
+  width: 27vw;
+  height: 45vh;
+  position: relative;
+  left: 15%;
+  top: 17%;
+  right: -5%;
 }
 .body .content{
   font-size: 15px;
 }
+.bodyDark .darkContent{
+  font-size: 15px;
+}
 .body .img .img1{
-  width: 30vw;
+  width: 25vw;
   height: 55vh;
   position: relative;
-  top: 10%;
+  top: 5%;
+}
+.bodyDark .img .darkimg1{
+  width: 25vw;
+  height: 55vh;
+  position: relative;
+  top: 5%;
 }
 .body aside ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyDark aside ul{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,39 +385,100 @@ aside ul{
   font-size: 10px;
   padding: 1rem;
 }
-.dropDown {
+.bodyDark aside ul li{
+  font-size: 10px;
+  padding: 1rem;
+}
+.body aside ul li a{
+  line-height: normal;
+}
+.bodyDark aside ul li a{
+  line-height: normal;
+}
+.body aside ul li:hover{
+  border: 0;
+}
+.bodyDark aside ul li:hover{
+  border: 0;
+}
+.darkdropDown {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   transform: scale(1,1);
   transition: 0.5s;
+  right: -20%;
 }
-.dropUp{
+.down {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: scale(1,1);
+  transition: 0.5s;
+  right: -20%;
+}
+.darkdropUp{
+  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   transform: scale(1,0);
   transition: 0.5s;
+  right: -20%;
 }
-.body .content .dropDown  li{
+.up{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transform: scale(1,0);
+  transition: 0.5s;
+  right: -20%;
+}
+.body .content .down  li{
   padding: 0.5rem;
   margin: 0.2rem;
 }
-.body .content .dropUp  li{
+.bodyDark .darkContent .darkdropDown  li{
   padding: 0.5rem;
   margin: 0.2rem;
 }
-.modalFront h3{
-  font-size: 16px;
-}
-.modalFront button{
+.body .content .up  li{
   padding: 0.5rem;
-  font-size: small;
+  margin: 0.2rem;
 }
+.bodyDark .darkContent .darkdropUp  li{
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+.body .content #topLink{
+  right: 45vw;
+  bottom: 4%;
+  position: relative;
+}
+.bodyDark .darkContent #topLink{
+  right: 45vw;
+  bottom: 4%;
+  position: relative;
+}
+}
+@media(min-width:500px) and (max-width:580px){
+      .hero p{
+        font-size: 13px;
+        position: relative;
+       }
+      .darkhero p{
+        font-size: 13px;
+        position: relative;
+       }
+
 }
 @media(min-width:100px) and (max-width:500px){
     .body{
-    background-image:url(./img1.jpg);
+    background-image: linear-gradient(rgba(225,225,225,0.6),rgba(225,225,225,0.6)),url(./img1.jpg);
     background-color: rgba(0, 0, 0, 0.11);
     background-position: top;
     background-size: contain;
@@ -258,49 +486,123 @@ aside ul{
     display: flex;
     flex-direction: column;
   }
+    .bodyDark{
+    background-image: linear-gradient(rgba(225,225,225,0.3),rgba(225,225,225,0.3)),url(./img3.png);
+    background-color: rgba(0, 0, 0, 0.11);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
   .hero p{
   font-size: 10px;
+  position: relative;
+  left: 13%;
 }
-.hero img{
-  display: none;
+  .darkhero p{
+  font-size: 10px;
+  position: relative;
+  left: 13%;
+}
+.hero .image img{
+  width: 25vw;
+  height: 40vh;
+  position: relative;
+  left: 17%;
+  top: 23%;
+  right: -5%;
+}
+.darkhero .image img{
+  width:25vw;
+  height: 40vh;
+  position: relative;
+  left: 17%;
+  top: 23%;
+  right: -7%;
+  margin-left: 0.5rem;
 }
 .body .content{
   font-size: 10px;
   font-weight: bolder;
 }
+.bodyDark .darkContent{
+  font-size: 10px;
+  font-weight: bolder;
+}
+.body .content p {
+margin-right: 1rem;
+}
+.bodyDark .darkContent p{
+margin-right: 1rem;
+}
+.body .content h4{
+margin-right: 1rem;
+}
+.bodyDark .darkContent h4{
+margin-right: 1rem;
+}
+
 .body aside{
+  display: none;
+}
+.bodyDark aside{
   display: none;
 }
 .body .img .img1{
   display: none;
 }
-.dropDown {
+.bodyDark .img .darkimg1{
+  display: none;
+}
+.down {
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: scale(1,1);
   transition: 0.5s;
 }
-.dropUp{
+.darkdropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1,1);
+  transition: 0.5s;
+}
+.up{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: 0.5s;
+  height: 1vh;
+}
+.darkdropUp{
   display: flex;
   align-items: center;
   flex-direction: column;
   transform: scale(1,0);
   transition: 0.5s;
+  transform-origin: top;
+  height: 1vh;
 }
-.body .content .dropDown  li{
+.body .content .down  li{
   padding: 0.3rem;
   margin: 0.2rem;
 }
-.body .content .dropUp  li{
+.bodyDark .darkContent .darkdropDown  li{
   padding: 0.3rem;
   margin: 0.2rem;
 }
-.modalFront h3{
-  font-size: 12px;
+.body .content .up  li{
+  padding: 0.3rem;
+  margin: 0.2rem;
 }
-.modalFront button{
-  padding: 0.2rem;
-  font-size: smaller;
+.body .content .darkdropUp  li{
+  padding: 0.3rem;
+  margin: 0.2rem;
 }
+
+
 }

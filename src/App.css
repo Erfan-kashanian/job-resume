@@ -2,20 +2,80 @@
   scroll-behavior: smooth;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.modalBack{
+  background-color: rgba(10, 10, 10, 0.925);
+  position: fixed;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+.modalFront{
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  z-index: 600 !important;
+  top: 30%;
+  border: 1px rgb(39, 137, 230) solid;
+  border-radius: 10px;
+  width: 70%;
+  left: 15%;
+  padding: 1rem;
+}
+.modalFront button{
+  padding: 0.5rem;
+  background-color: blue !important;
+  color: aliceblue !important;
+  border: solid 1px #dfdfe6;
+  font-size: large;
+  border-radius: 10px;
+}
+.modalFront h3{
+  color: rgba(70, 170, 236, 0.932);
+  text-shadow: 5px  5px 5px rgb(2, 2, 82);
+}
+.modalFront button:hover{
+  transform: scale(1.1);
+}
 .nav{
   background-color: rgba(90, 167, 238, 0.644) !important;
   display: grid !important;
   grid-template-columns: auto auto auto !important;
+  grid-template-rows: 45% 55%;
   height: 4rem;
+}
+.navdark{
+  display: grid !important;
+  grid-template-columns: auto auto auto !important;
+  grid-template-rows: 45% 55%;
+  height: 4rem;
+  background-color: rgba(15, 15, 15, 0.884);
+  color: #dfdfe6;
 }
 .links{
   display: flex !important;
   flex-direction: row-reverse !important;
 }
+.darkLinks{
+    display: flex !important;
+  flex-direction: row-reverse !important;
+}
 .links a{
+  margin-top: 0.5rem;
   margin-right: 1rem !important;
   text-decoration: none ;
   color: rgb(18, 8, 148);
+  padding: 0rem;
+  height: 2rem;
+}
+.darkLinks a{
+    margin-right: 1rem !important;
+  text-decoration: none ;
+  color: rgb(206, 206, 212);
   padding: 0rem;
   height: 2rem;
 }
@@ -25,35 +85,140 @@
   transition: 0.1s;
   color: #ff0055;
 }
+.darkLinks a:hover{
+  transform: scale(1.2);
+  border-bottom: 1px solid #eee6e9;
+  transition: 0.1s;
+  color: #eceaea;
+}
+.but{
+  width: 10vw;
+  background-color: rgba(33, 33, 34, 0.781);
+  color: #e0e0e9c9;
+  border-radius: 6px;
+  border-color: #dfdfe6;
+}
+.darkBut{
+  width: 10vw;
+  background-color: rgba(229, 229, 235, 0.781);
+  color: #070707c9;
+  border-radius: 6px;
+  border-color: #0a0a0a;
+}
 .main .nav .links .active{
 color: #ff0055;
 }
+.main .navdark .darkLinks .darkactive{
+border-bottom: solid 1px wheat;
+}
+
 .nav h2{
   text-align: end;
   margin-right: 3rem;
   color: rgb(18, 8, 148);
   text-shadow: 5px 5px 5px rgba(10, 10, 48, 0.548);
 }
+.navdark h2{
+  text-align: end;
+  margin-right: 3rem;
+  color: rgb(221, 221, 226);
+  text-shadow: 5px 5px 5px rgba(193, 193, 199, 0.548);
+}
 .nav h4{
   color: rgb(9, 9, 112);
 }
-
+.footer{
+  direction: rtl;
+  background-color: #3a3ace9d;
+}
+.darkfooter{
+  direction: rtl;
+  background-color: #6e6e709d;
+}
+.darkfooter p{
+  color: #111111;
+}
+footer p{
+  text-align: center;
+}
+footer img{
+  width: 3rem;
+  height:3rem;
+}
+footer .icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .icons div{
+  margin-left: 1rem;
+}
 @media(min-width:500px) and (max-width:1000px){
   .links a{
-    font-size: 13px;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+  .darkLinks a{
+    margin-top: 1rem;
+    font-size: 15px;
   }
   .nav h2,h4{
-    font-size: 17px;
+    margin-top: 1rem;
+    font-size: 22px;
   }
-
+  .navdark h2,h4{
+    margin-top: 1rem;
+    font-size: 22px;
+  }
+.modalFront h3{
+  font-size: 16px;
+}
+.modalFront button{
+  padding: 0.5rem;
+  font-size: small;
+}
+.but,.darkBut{
+  font-size: 13px;
+  width: 20vw;
+}
 }
 @media(min-width:100px) and (max-width:500px){
   
     .links a{
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .darkLinks a{
+    font-size: 13px;
   }
   .nav h2,h4{
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
-  
+  .navdark h2,h4{
+    font-size: 15px !important;
+  }
+  .modalFront h3{
+  font-size: 12px;
+}
+.modalFront button{
+  padding: 0.2rem;
+  font-size: smaller;
+}
+.but,.darkBut{
+  font-size: 13px;
+  width: 25vw;
+}
+footer .icons{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+footer img{
+  width: 2rem;
+  height:2rem;
+  margin: 0.5rem;
+}
+footer p{
+  font-size: smaller;
+}
 }

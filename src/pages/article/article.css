@@ -1,20 +1,108 @@
 
 .article{
-    
-    height: 80vh;
+    margin-top: -2rem;
+    height: 90vh;
     direction: rtl;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(./img23.jpg);
+   background-image: linear-gradient(rgba(225,225,225,0.3),rgba(225,225,225,0.3)),url(./img23.jpg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
+.darkarticle{
+    margin-top: -2rem;
+    height: 90vh;
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-image: linear-gradient(rgba(225,225,225,0.3),rgba(225,225,225,0.3)),url(./img24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.darkarticle {
+    color: aliceblue;
+}
+
 .item{
     margin-top: 2rem;
     margin-right: 2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;   
+    grid-template-rows: auto; 
+}
+.text p{
+    margin: 1rem;
+}
+.darktext p{
+    margin: 1rem;
+}
+.item .text{
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    border: 1px solid #8282e2d3;
+    box-shadow: 5px 5px #8282e2d3;
+}
+.item .darktext{
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    border: 1px solid #eeeef1d3;
+    box-shadow: 5px 5px #acacafd3;
+}
+.article .item .part a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(221, 183, 57, 0.959);
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+.darkarticle .item .part a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(26, 25, 25, 0.664);
+    color: aliceblue;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+.article .item .part a:hover{
+    transform: scale(1.1);
+}
+.article .item .part a:active{
+    transform: scale(0.8);
+}
+.darkarticle .item .part a:hover{
+    transform: scale(1.1);
+}
+.darkarticle .item .part a:active{
+    transform: scale(0.8);
 }
 @media(max-width:500px){
-    h3,h4,h5{
-        font-size: medium;
+    .article{
+        background-image: linear-gradient(rgba(225,225,225,0.5),rgba(225,225,225,0.5)),url(./img23.jpg);
+        background-size: cover;
+    }
+    .darkarticle{
+        background-image: linear-gradient(rgba(225,225,225,0.3),rgba(225,225,225,0.3)),url(./img24.jpg);
+        background-size: cover;
+    }
+    .darkarticle h5,h6{
+        font-size: small;
+    }
+    .article h5,h6{
+        font-size: small;
+    }
+    .text{
+        font-size: small;
+    }
+    .darktext{
+        font-size: small;
     }
 }

@@ -1,10 +1,33 @@
-.main .describe{
+.mainPart{
+    height: 130vh;
+    background-color: rgb(158, 206, 228);
+}
+.darkmainPart{
+    height: 130vh;
+    background-color: rgba(92, 92, 105, 0.603);
+}
+.mainPart .describe{
     direction: rtl !important;
     text-align: center;
-    margin-top: 1rem;
 }
+.darkmainPart .describe{
+    direction: rtl !important;
+    text-align: center;
+}
+.link{
+    text-align: center;
+}
+.darklink{
+    color: antiquewhite;
+    text-align: center;
+}
+
 @media(max-width:500px){
-    .main .describe{
+    .mainPart .describe{
         font-size: 15px;
     }
+    .darkmainPart .describe{
+        font-size: 15px;
+    }
+
 }

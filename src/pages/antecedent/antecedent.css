@@ -1,7 +1,17 @@
 .div{
     direction: rtl;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(./img21.jpg);
+    background-image: linear-gradient(rgba(225,225,225,0.5),rgba(225,225,225,0.5)),url(./img21.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.darkdiv{
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(225,225,225,0.5),rgba(225,225,225,0.5)),url(./img22.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,25 +19,43 @@
     grid-template-columns: 70% 30%;
 }
 .div a{
+    display: inline-block;
     text-decoration: none;
     color: aliceblue;
-}
-button{
+    background-color: #0000ffc4;
     padding: 0.5rem;
-    background-color: rgba(0, 0, 255, 0.767);
-    border-radius: 5px !important;
-    border: solid aliceblue 1px;
+    border-radius: 5px;
     transition: 0.1s;
-    cursor: pointer;
+    border: solid aliceblue 1px;
 }
-button:hover{
-    background-color: aliceblue;
-        border: solid rgba(9, 33, 255, 0.836) 1px;
+.darkdiv a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(13, 13, 14);
+    background-color: #d9d9dbc4;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.1s;
+    border: solid rgb(13, 13, 14) 1px;
+}
 
-}
 .div a:hover{
-    color: rgba(8, 24, 247, 0.795);
+    background-color: aliceblue;
+    border: solid #0921ffd5 1px;
+    color: #0921ffd5 !important;
 }
+.darkdiv a:hover{
+    background-color: rgba(8, 8, 8, 0.76);
+    border: solid #e5e6ebd5 1px;
+    color: #eaebf0d5 !important;
+}
+.div a:active{
+   transform: scale(0.8);
+}
+.darkdiv a:active{
+   transform: scale(0.8);
+}
+
 .notice{
     background-color: rgba(139, 69, 19, 0.39);
     margin-top: 1rem;
@@ -35,6 +63,15 @@ button:hover{
     height: 30vh;
     font-weight: bolder;
     border: 2px double saddlebrown;
+}
+.darknotice{
+    color: aliceblue;
+    background-color: rgba(26, 25, 25, 0.39);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 30vh;
+    font-weight: bolder;
+    border: 2px double rgb(70, 69, 69);
 }
 @media(min-width:500px) and (max-width:1000px){
     .map h3{
@@ -47,8 +84,10 @@ button:hover{
         padding: 0.2rem;
     }
     .notice{
-        height: 50vh;
-        font-size: small;
+        height: 85vh;
+    }
+    .darknotice{
+        height: 85vh;
     }
 }
 @media(min-width:100px) and (max-width:500px){
@@ -64,8 +103,17 @@ button:hover{
     .notice h3{
         font-size:12px ;
     }
+    .darknotice h3{
+        font-size:12px ;
+    }
     .notice{
-        height: 100% !important;
+        height: 70vh;
+        padding: 0.5rem;
+        font-size: 10px;
+        
+    }
+    .darknotice{
+        height: 70vh;
         padding: 0.5rem;
         font-size: 10px;
         
