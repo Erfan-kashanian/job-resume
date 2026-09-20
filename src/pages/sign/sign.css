@@ -1,18 +1,20 @@
 .mainPart{
-    height: 130vh;
-    background-color: rgb(158, 206, 228);
+    padding: 1rem;
 }
 .darkmainPart{
-    height: 130vh;
-    background-color: rgba(92, 92, 105, 0.603);
+    padding: 1rem;
+    
+    background-color: rgba(75, 75, 77, 0.623);
 }
 .mainPart .describe{
     direction: rtl !important;
     text-align: center;
+    padding-top: 1rem;
 }
 .darkmainPart .describe{
     direction: rtl !important;
     text-align: center;
+    padding-top: 1rem;
 }
 .link{
     text-align: center;

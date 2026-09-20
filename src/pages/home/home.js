@@ -12,9 +12,12 @@ export default function Home({darkMode}){
       <div className={darkMode ? "darkhero" : "hero"}>
         <div className='text'>
           <p>عرفان کاشانیان</p>
-          <p>front-end developper</p>
-          <p>متخصص در javaScript  و React</p>
+          <p>front-end developper(JavaScript + React)</p>
           <p>مسلط به طراحی سایت های Responsive به درخواست و سلیقه مشتری</p>
+          <div className='contact'>
+          <a href='www.linkedin.com/in/erfan-kashanian-0008b2438' >linkedIn</a>
+          <a href='https://github.com/Erfan-kashanian' id='git'>gitHub</a>
+          </div>
         </div>
         <div className='image'>
           <img src={img2} alt='resume'/>

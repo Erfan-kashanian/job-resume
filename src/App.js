@@ -11,6 +11,7 @@ import bale from './bale.png'
 import eita from './eita.png'
 import telegram from './telegram.png'
 import whatsapp from './whatsapp.png'
+import Projects from './pages/projects/projects';
 
 
 function App() {
@@ -39,6 +40,7 @@ useEffect(()=>{
       <div className={darkMode ? "darkLinks" : "links"}>
         <NavLink to='/' className={({isActive})=>`${isActive && !darkMode ? "active" : ""} ${isActive && darkMode ? "darkactive" : ""}`}>صفحه اصلی</NavLink>
         <NavLink to='/antecedent' className={({isActive})=>`${isActive && !darkMode ? "active" : ""} ${isActive && darkMode ? "darkactive" : ""}`}>سوابق کاری</NavLink>
+        <NavLink to='/projects' className={({isActive})=>`${isActive && !darkMode ? "active" : ""} ${isActive && darkMode ? "darkactive" : ""}`}>نمونه کارها</NavLink>
         <NavLink to='/sign' className={({isActive})=>`${isActive && !darkMode ? "active" : ""} ${isActive && darkMode ? "darkactive" : ""}`}>ثبت نام</NavLink>
       </div>
         <button className={darkMode ? "darkBut" : "but"} onClick={()=>setDarkMode(!darkMode)}>dark / light</button>
@@ -48,6 +50,7 @@ useEffect(()=>{
         <Route path='/antecedent' element={<Antecedent darkMode={darkMode}/>}/>
         <Route path='/sign' element={<Sign darkMode={darkMode}/>}/>
         <Route path='/Article/:id' element={<Article darkMode={darkMode}/>}/>
+        <Route path='/projects' element={<Projects darkMode={darkMode}/>} />
         <Route path='*' element={<Navigate to={'/'} darkMode={darkMode}/>}/>
       </Routes>
       <footer className={darkMode ? "darkfooter" : "footer"}>

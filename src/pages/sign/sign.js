@@ -28,7 +28,7 @@ export default function Sign({darkMode}){
     return(
         <div className={darkMode ? "darkmainPart" : "mainPart"}>
             <h5 className='describe'>این یک فرم ثبت نام آزمایشی است که با استفاده از useFormik  زده ام و برای استایل های آن از  bootStrap استفاده کرده ام و برای ورود بدون وارد کردن اطلاعات validation قرار داده ام </h5>
-            <form onSubmit={formik.handleSubmit} className={!darkMode ? "container my-4 p-3 border border-primary border-3 rounded-4 bg-primary-subtle d-flex flex-column justify-content-center align-items-center w-50 shadow-lg p-3 mb-5 bg-body-tertiary rounded" : "container my-4 p-3 border border-dark border-3 rounded-4 bg-secondary  d-flex flex-column justify-content-center align-items-center w-50 shadow-lg p-3 mb-5  rounded"}>
+            <form onSubmit={formik.handleSubmit} className={!darkMode ? "container  p-3 border border-primary border-3 rounded-4 bg-primary-subtle d-flex flex-column justify-content-center align-items-center w-50 shadow-lg p-3  bg-body-tertiary rounded" : "container py-2 p-3 border border-dark border-3 rounded-4 bg-secondary  d-flex flex-column justify-content-center align-items-center w-50 shadow-lg p-3  rounded"}>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12 mb-3'>

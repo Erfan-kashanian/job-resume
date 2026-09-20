@@ -72,10 +72,37 @@ box-shadow: 0px 10px 10px 10px rgba(173, 173, 173, 0.644);
   right: 15%;
   top: 20%;
 }
+.hero .text .contact{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.hero .text .contact a{
+  padding: 1rem;
+  color: #061052;
+  border-left: solid 1px #061052;
+  text-decoration: none;
+}
+#git{
+  border: none;
+}
+.darkhero .text .contact{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.darkhero .text .contact a{
+  padding: 1rem;
+  color: #141414;
+  border-left: solid 1px #171718;
+  text-decoration: none;
+}
 .hero .text p{
   text-align: center;
   font-size: larger;
-  color: rgb(6, 16, 82);
+  color: #061052;
   text-shadow: 4px 4px 5px rgb(4, 4, 68);
 }
 .darkhero .text{
@@ -499,12 +526,14 @@ aside ul{
   .hero p{
   font-size: 10px;
   position: relative;
-  left: 5%;
+  left: 12%;
+  padding-left: 1rem;
 }
   .darkhero p{
   font-size: 10px;
   position: relative;
-  left: 5%;
+  left: 12%;
+  padding-left: 1rem;
 }
 .hero .image img{
   width: 25vw;
@@ -521,6 +550,21 @@ aside ul{
   left: 17%;
   top: 23%;
   right: -5%;
+}
+.hero .text .contact{
+  margin-left: 3rem;
+}
+.darkhero .text .contact{
+  margin-left: 3rem;
+}
+.hero .text .contact a{
+  padding: 0.5rem;
+  font-size: medium;
+}
+
+.darkhero .text .contact a{
+  padding: 0.5rem;
+  font-size: medium;
 }
 .body .content{
   font-size: 10px;

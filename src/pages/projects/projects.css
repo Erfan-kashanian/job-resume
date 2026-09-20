@@ -1,0 +1,52 @@
+.topic{
+    direction: rtl;
+    height: 72.9vh;
+    background-image: linear-gradient(rgba(255, 253, 253, 0.45),rgba(255, 253, 253, 0.45)),url(./images.png);
+    background-color: rgba(0, 0, 0, 0.11);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.darktopic{
+    direction: rtl;
+    height: 72.9vh;
+    background-image: linear-gradient(rgba(255, 253, 253, 0.3),rgba(255, 253, 253, 0.3)),url(./dark.jpg);
+    background-color: rgba(0, 0, 0, 0.11);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.darktopic .webs li{
+    color: aliceblue;
+}
+.darktopic .webs h5{
+    color: rgb(7, 7, 7);
+}
+.darktopic .webs a{
+    color: rgb(7, 7, 7);
+}
+.webs{
+    margin-right: 1rem;
+    padding-top: 1rem;
+}
+@media(max-width:500px){
+    .topic{
+        background-size: cover;
+    }
+    .darktopic{
+        background-size: cover;
+    }
+    .topic .webs h5{
+        font-size: medium;
+    }
+    .topic .webs ul li{
+        font-size: small;
+    }
+    .darktopic .webs h5{
+        font-size: medium;
+    }
+    .darktopic .webs ul li{
+        font-size: small;
+        color: black;
+    }
+}
