@@ -91,6 +91,7 @@
   color: #e0e0e9c9;
   border-radius: 6px;
   border-color: #dfdfe6;
+  margin-left: 1rem;
 }
 .darkBut{
   width: 10vw;
@@ -98,6 +99,7 @@
   color: #070707c9;
   border-radius: 6px;
   border-color: #0a0a0a;
+  margin-left: 1rem;
 }
 .main .nav .links .active{
 color: #ff0055;
@@ -122,6 +124,12 @@ padding-bottom: 2rem;
 }
 .nav h4{
   color: rgb(9, 9, 112);
+  padding-left: 1rem;
+  padding-top:0.5rem;
+}
+.navdark h4{
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 .footer{
   padding: 1rem;
@@ -193,13 +201,21 @@ footer .icons div{
     padding: 0.5rem;
     font-size: 13px;
   }
-  .nav h2,h4{
+  .nav  h2{
+    font-size: 15px !important;
+    margin-right: 1rem;
+    
+  }
+  .nav .time h4{
+    font-size: 12px !important;
+  }
+  .navdark h2{
     font-size: 15px !important;
     margin-right: 1rem;
   }
-  .navdark h2,h4{
-    font-size: 15px !important;
-    margin-right: 1rem;
+  .navdark .time h4{
+    font-size: 12px !important;
+
   }
   .modalFront h3{
   font-size: 12px;
@@ -209,9 +225,10 @@ footer .icons div{
   font-size: smaller;
 }
 .but,.darkBut{
-  font-size: 13px;
-  width: 25vw;
-  height: 10vh;
+  font-size: 10px;
+  width: 20vw;
+  height: 7vh;
+  padding: 0;
 }
 
 

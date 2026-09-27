@@ -15,7 +15,7 @@ export default function Home({darkMode}){
           <p>front-end developper(JavaScript + React)</p>
           <p>مسلط به طراحی سایت های Responsive به درخواست و سلیقه مشتری</p>
           <div className='contact'>
-          <a href='www.linkedin.com/in/erfan-kashanian-0008b2438' >linkedIn</a>
+          <a href='https://www.linkedin.com/in/erfan-kashanian-0008b2438/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLKqE0yzDTJWJsV2O%2BiTMbw%3D%3D' >linkedIn</a>
           <a href='https://github.com/Erfan-kashanian' id='git'>gitHub</a>
           </div>
         </div>

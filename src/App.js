@@ -35,7 +35,7 @@ useEffect(()=>{
             </div>}
       <BrowserRouter basename='/job-resume'>
       <nav className={darkMode ? "navdark" : "nav"} id='top' darkMode={darkMode} setDarkMode={setDarkMode}>
-      <div><h4>{time}</h4></div>
+      <div className='time'><h4>{time}</h4></div>
       <h2>رزومه کاری من</h2>
       <div className={darkMode ? "darkLinks" : "links"}>
         <NavLink to='/' className={({isActive})=>`${isActive && !darkMode ? "active" : ""} ${isActive && darkMode ? "darkactive" : ""}`}>صفحه اصلی</NavLink>

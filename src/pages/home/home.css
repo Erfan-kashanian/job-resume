@@ -72,6 +72,16 @@ box-shadow: 0px 10px 10px 10px rgba(173, 173, 173, 0.644);
   right: 15%;
   top: 20%;
 }
+.main .hero .text a:hover{
+  color: rgb(223, 26, 147);
+  background-color: #09095efb;
+  border-radius: 5px;
+}
+.darkMain .darkhero .text a:hover{
+  color: white;
+  background-color: #141414da;
+  border-radius: 5px;
+}
 .hero .text .contact{
   display: flex;
   flex-direction: row;
@@ -352,7 +362,7 @@ aside ul{
 
 @media(min-width:500px) and (max-width:1000px){
 .hero .text{
-  right: -2%;
+  right: 10%;
 }
 .darkhero .text{
   right: -2%;
@@ -493,17 +503,7 @@ aside ul{
   position: relative;
 }
 }
-@media(min-width:500px) and (max-width:580px){
-      .hero p{
-        font-size: 13px;
-        position: relative;
-       }
-      .darkhero p{
-        font-size: 13px;
-        position: relative;
-       }
 
-}
 @media(min-width:100px) and (max-width:500px){
     .body{
     background-image: linear-gradient(rgba(225,225,225,0.6),rgba(225,225,225,0.6)),url(./img1.jpg);
@@ -523,17 +523,27 @@ aside ul{
     display: flex;
     flex-direction: column;
   }
-  .hero p{
-  font-size: 10px;
+  .hero  p{
   position: relative;
   left: 12%;
   padding-left: 1rem;
 }
+.hero .text{
+  top: 12%;
+}
+.darkhero .text {
+  top: 12%;
+}
+.main .hero .text p{
+  font-size: 13px;
+}
   .darkhero p{
-  font-size: 10px;
   position: relative;
   left: 12%;
   padding-left: 1rem;
+}
+.darkMain .darkhero .text p{
+  font-size: 13px;
 }
 .hero .image img{
   width: 25vw;

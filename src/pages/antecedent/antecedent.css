@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: 70% 30%;
 }
+.div .map{
+    margin-right: 1rem;
+}
+.darkdiv .map{
+    margin-right: 1rem;
+}
 .darkdiv{
     direction: rtl;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
